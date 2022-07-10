@@ -15,12 +15,22 @@ name = "arduino-hal"
 version = "0.1.0"
 source = "git+https://github.com/Rahix/avr-hal?rev=0258ed5#0258ed520f83c0f33bfe32ce7c6c262f26afb835"
 dependencies = [
+ "atmega-hal",
  "avr-device",
  "avr-hal-generic",
  "cfg-if 1.0.0",
  "embedded-hal",
  "ufmt",
  "void",
+]
+
+[[package]]
+name = "atmega-hal"
+version = "0.1.0"
+source = "git+https://github.com/Rahix/avr-hal?rev=0258ed5#0258ed520f83c0f33bfe32ce7c6c262f26afb835"
+dependencies = [
+ "avr-device",
+ "avr-hal-generic",
 ]
 
 [[package]]
